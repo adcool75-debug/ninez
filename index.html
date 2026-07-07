@@ -200,27 +200,13 @@
     .footer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
     .footer-title{color:#fff;font-size:18px;font-weight:800;letter-spacing:.12em;margin-bottom:14px}
     .footer-info{font-size:12px;line-height:1.9}.footer-links{display:flex;justify-content:flex-end;gap:18px;font-size:12px}
-    .footer-map{margin-top:34px;border-top:1px solid rgba(255,255,255,.1);padding-top:30px}
-    .footer-map-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
-    .footer-map-title{color:#fff;font-size:15px;font-weight:900;letter-spacing:.08em}
-    .footer-map-address{font-size:12px;line-height:1.7;color:#9fb0c2;margin-top:5px}
-    .footer-map-link{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 14px;border:1px solid rgba(103,232,249,.42);border-radius:8px;color:#e7f8fc;font-size:12px;font-weight:800}
-    .location-map-card{position:relative;overflow:hidden;width:100%;height:260px;border-radius:8px;background:#0b172a;border:1px solid rgba(255,255,255,.1)}
-    .location-map-card:before{content:"";position:absolute;inset:0;background:
-      linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px) 0 0/42px 42px,
-      linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px) 0 0/42px 42px,
-      radial-gradient(circle at 72% 24%,rgba(4,174,217,.22),transparent 30%),
-      linear-gradient(135deg,rgba(4,174,217,.12),rgba(7,17,31,.98));
-    }
-    .map-road{position:absolute;height:18px;border-radius:999px;background:rgba(255,255,255,.16);box-shadow:0 0 0 1px rgba(255,255,255,.08) inset}
-    .map-road-main{left:-4%;right:-4%;top:52%;transform:rotate(-8deg)}
-    .map-road-sub{left:16%;right:10%;top:28%;transform:rotate(19deg);opacity:.7}
-    .map-road-vertical{width:18px;height:120%;left:48%;top:-10%;transform:rotate(8deg);opacity:.62}
-    .map-district{position:absolute;left:28px;top:24px;color:#9fb0c2;font-size:11px;font-weight:800;letter-spacing:.08em}
-    .map-station{position:absolute;right:28px;bottom:24px;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.1);color:#dcebf7;font-size:11px;font-weight:800}
-    .map-pin{position:absolute;left:50%;top:48%;transform:translate(-50%,-100%);display:grid;place-items:center;width:42px;height:42px;border-radius:50% 50% 50% 6px;background:#04aed9;rotate:-45deg;box-shadow:0 16px 35px rgba(4,174,217,.32)}
-    .map-pin:after{content:"";width:14px;height:14px;border-radius:50%;background:#fff}
-    .map-pin-label{position:absolute;left:50%;top:54%;transform:translate(-50%,0);padding:8px 12px;border-radius:8px;background:rgba(255,255,255,.94);color:#071a33;font-size:12px;font-weight:900;white-space:nowrap;box-shadow:0 16px 35px rgba(0,0,0,.2)}
+    .contact-map{grid-column:1/-1;margin-top:8px;padding-top:24px;border-top:1px solid #d8e7ee}
+    .contact-map-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
+    .contact-map-title{color:var(--ink);font-size:15px;font-weight:900;letter-spacing:.08em}
+    .contact-map-address{font-size:12px;line-height:1.7;color:#607589;margin-top:5px}
+    .contact-map-link{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 14px;border:1px solid #b9dbe8;border-radius:8px;color:var(--deep);font-size:12px;font-weight:900;background:#fff}
+    .contact-map-frame{overflow:hidden;width:100%;height:300px;border-radius:12px;border:1px solid #d8e7ee;background:#e8f2f7}
+    .contact-map-frame iframe{display:block;width:100%;height:100%;border:0}
     .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:22px;font-size:11px;color:#7f8c9b}
     .mobile-menu{display:none}
     @media (max-width:1320px) and (min-width:1081px){
@@ -243,7 +229,7 @@
       section{padding:72px 0}.section-title{font-size:33px}.solution-grid,.audience-grid,.media-grid,.case-grid,.product-grid{grid-template-columns:1fr}.solution-card:last-child{grid-column:auto}
       .stats{grid-template-columns:1fr 1fr}.stat{padding:20px 16px}.stat b{font-size:25px}
       .company-panel{padding:28px}.company-badges{grid-template-columns:1fr}.media-number b{font-size:53px}.contact-wrap{padding:26px}.contact h2{font-size:31px}form{display:block}.contact-wrap form>div{width:100%;margin-bottom:12px}.full{width:100%}
-      .footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start;flex-wrap:wrap}.footer-map-head{display:block}.footer-map-link{margin-top:12px}.location-map-card{height:230px}.company-facts{display:block}.company-fact,.company-fact.full-row{width:100%;margin-bottom:12px}
+      .footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start;flex-wrap:wrap}.contact-map-head{display:block}.contact-map-link{margin-top:12px}.contact-map-frame{height:240px}.company-facts{display:block}.company-fact,.company-fact.full-row{width:100%;margin-bottom:12px}
     }
 
 
@@ -728,6 +714,18 @@
           <div class="form-note">문의 내용은 NINEZ 담당 메일 <b>cp0144@9-z.co.kr</b>로 전달됩니다.</div>
           <noscript><div class="full form-status error">JavaScript가 꺼져 있어 제출 후 외부 확인 페이지로 이동할 수 있습니다.</div></noscript>
         </form>
+        <div class="contact-map" aria-label="NINEZ 위치 지도">
+          <div class="contact-map-head">
+            <div>
+              <div class="contact-map-title">LOCATION</div>
+              <div class="contact-map-address">서울특별시 강서구 마곡서로 152, B동 6층 612호 (마곡동, 두산더랜드타워)</div>
+            </div>
+            <a class="contact-map-link" href="https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EB%A7%88%EA%B3%A1%EC%84%9C%EB%A1%9C%20152%20%EB%91%90%EC%82%B0%EB%8D%94%EB%9E%9C%EB%93%9C%ED%83%80%EC%9B%8C%20B%EB%8F%99%20612%ED%98%B8" target="_blank" rel="noopener noreferrer">Google 지도에서 보기</a>
+          </div>
+          <div class="contact-map-frame">
+            <iframe title="NINEZ 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EB%A7%88%EA%B3%A1%EC%84%9C%EB%A1%9C%20152%20%EB%91%90%EC%82%B0%EB%8D%94%EB%9E%9C%EB%93%9C%ED%83%80%EC%9B%8C%20B%EB%8F%99%20612%ED%98%B8&output=embed"></iframe>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -747,24 +745,6 @@
           </div>
         </div>
         <div class="footer-links"><a href="#contact">문의하기</a><a href="#home">TOP ↑</a></div>
-      </div>
-      <div class="footer-map" aria-label="NINEZ 오시는 길">
-        <div class="footer-map-head">
-          <div>
-            <div class="footer-map-title">LOCATION</div>
-            <div class="footer-map-address">서울특별시 강서구 마곡서로 152, B동 6층 612호 (마곡동, 두산더랜드타워)</div>
-          </div>
-          <a class="footer-map-link" href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EB%A7%88%EA%B3%A1%EC%84%9C%EB%A1%9C%20152%20%EB%91%90%EC%82%B0%EB%8D%94%EB%9E%9C%EB%93%9C%ED%83%80%EC%9B%8C" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기</a>
-        </div>
-        <div class="location-map-card" aria-label="NINEZ 위치 약도">
-          <div class="map-district">MAGOK BUSINESS DISTRICT</div>
-          <div class="map-road map-road-main"></div>
-          <div class="map-road map-road-sub"></div>
-          <div class="map-road map-road-vertical"></div>
-          <div class="map-pin" aria-hidden="true"></div>
-          <div class="map-pin-label">NINEZ · 두산더랜드타워 B동 6F</div>
-          <div class="map-station">마곡나루역 인근</div>
-        </div>
       </div>
       <div class="copyright">© NINEZ Corp. All Rights Reserved.</div>
     </div>
